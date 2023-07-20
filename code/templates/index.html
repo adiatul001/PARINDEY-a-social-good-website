@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtuous Living Movement</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link href="../static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link rel="icon" type="image/ico" href="../static/css/images/favicon-new.png">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="../static/css/images/lord.png
+            " alt="logo">
+
+        </div>
+
+        <p id="say-no">Say No to:</p>
+        <ul>
+            <li class="item"><a href="https://iskcondesiretree.com/page/what-s-wrong-with-eating-meat"
+                    target="_blank">Meat Eating</a></li>
+            <li class="item"><a href="https://vaniquotes.org/wiki/Addicted_to_intoxication"
+                    target="_blank">Intoxication</a></li>
+            <li class="item"><a href="https://www.harekrsna.com/practice/4regs/gambling.htm"
+                    target="_blank">Gambling</a></li>
+            <li class="item"><a
+                    href="https://krishna.org/giving-up-illicit-sex-life-taking-responsibility-the-vedic-solution/"
+                    target="_blank">Illicit Sex</a></li>
+
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="title">
+            <h2>"Living a <span>Virtuous</span> Life: Rejecting <span>Vice</span>"</h2>
+            <p>Promoting social awareness through the <span id="red-color">elimination</span>
+                of harmful
+                habits.
+                <span id="red-color">Together,</span> we can create a
+                healthier, more responsible society for a <span id="red-color">brighter future.</span>
+            </p>
+        </div>
+    </section>
+
+    <div class="marqee-adjustment">
+        <marquee behavior="scroll" direction="left">"It is not enough to be compassionate. You must act."</marquee>
+        <marquee behavior="scroll" direction="right">"Transform into an Instrument of Compassion"
+        </marquee>
+    </div>
+
+    <section class="Services-container">
+        <h1 class="h-primary center">The Four Regulative Principles</h1>
+        <div id="Services">
+            <div class="box">
+                <img class="regulative-principles-img" src="../static/css/images/no-meat-eating.jpg" alt="">
+                <h2 class="h-secondary center"> <a
+                        href="https://iskcondesiretree.com/page/what-s-wrong-with-eating-meat" target="_blank">Meat
+                        Eating</a> </h2>
+                <p class="center">Meat eating can contribute to <span id="color">heart disease, cancer, obesity, and
+                        environmental
+                        damage,</span> among other negative health and ecological consequences.</p>
+            </div>
+
+            <div class="box">
+                <img class="regulative-principles-img" src="../static/css/images/no-intoxication.jpg" alt="">
+                <h2 class="h-secondary center"> <a href="https://vaniquotes.org/wiki/Addicted_to_intoxication" target="_blank
+                        ">Intoxication</a></h2>
+                <p class="center">Intoxication can lead to <span id="color">impaired judgment, memory loss,
+                        addiction, liver damage,</span>
+                    accidents, violence, and even death.</p>
+            </div>
+
+
+            <div class="box">
+                <img class="regulative-principles-img" src="../static/css/images/no gambling.png" alt="">
+                <h2 class="h-secondary center"><a href="https://www.harekrsna.com/practice/4regs/gambling.htm" target="_blank
+                        ">Gambling</a></h2>
+                <p class="center">Gambling can lead to <span id="color">addiction, financial ruin, mental health
+                        problems, relationship
+                        issues,</span> and other negative consequences.</p>
+            </div>
+
+            <div class="box">
+                <img class="regulative-principles-img" src="../static/css/images/no-illicit-sex.jpeg" alt="">
+                <h2 class="h-secondary center"><a
+                        href="https://krishna.org/giving-up-illicit-sex-life-taking-responsibility-the-vedic-solution/"
+                        target="_blank
+                        ">Illicit
+                        Sex</a></h2>
+                <p class="center">Illicit sex can lead to <span id="color">unintended pregnancies, STDs, emotional
+                        distress, damaged
+                        relationships,</span> and moral degradation.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FORM STARTS -->
+
+    <h1 class="h-primary center">Check your Risk status...</h1>
+    <div id="form-container">
+        <form action="/predict" method="POST">
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" placeholder="in years">
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <input type="number" name="gender" id="gender" placeholder="1 - female, 2 - male">
+            </div>
+            <div class="form-group">
+                <label for="height">Height</label>
+                <input type="number" name="height" id="height" placeholder="in cm">
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight</label>
+                <input type="number" name="weight" id="weight" placeholder="in kg">
+            </div>
+            <div class="form-group">
+                <label for="ap_hi">Systolic Blood Pressure</label>
+                <input type="number" name="ap_hi" id="ap_hi" placeholder="systolic blood pressure level">
+            </div>
+            <div class="form-group">
+                <label for="ap_lo">Diastolic Blood Pressure</label>
+                <input type="number" name="ap_lo" id="ap_lo" placeholder="diastolic blood pressure level">
+            </div>
+            <div class="form-group">
+                <label for="cholesterol">Cholesterol</label>
+                <input type="number" name="cholesterol" id="cholesterol"
+                    placeholder="1 - normal, 2 - above normal, 3 - well above normal">
+            </div>
+            <div class="form-group">
+                <label for="gluco">Blood GLucose level</label>
+                <input type="number" name="gluco" id="gluco"
+                    placeholder="1 - normal, 2 - above normal, 3 - well above normal">
+            </div>
+            <div class="form-group">
+                <label for="smoke">Smoking Status</label>
+                <input type="number" name="smoke" id="smoke" placeholder="0 - non-smoker, 1 - smoker">
+            </div>
+            <div class="form-group">
+                <label for="alco">Alcohol Drinking status</label>
+                <input type="number" name="alco" id="alco" placeholder="0 - non-drinker, 1 - drinker">
+            </div>
+            <div class="form-group">
+                <label for="active">Lifestyle</label>
+                <input type="number" name="active" id="active" placeholder="0 - active, 1 - sedentary ">
+            </div>
+            <div>
+                <button type="submit" class="submit-btn">Predict Now</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <br>
+        <h4 align="center" class="final-output" <b>{{pred}}</b></h4>
+        <br>
+
+    </div>
+
+    <footer>
+
+        <div class="center">
+            Copyright &copy <br> All rights reserved
+        </div>
+    </footer>
+
+    </section>
+
+</body>
+
+</html>

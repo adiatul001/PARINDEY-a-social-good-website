@@ -1,0 +1,352 @@
+/* css reset*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* css variable*/
+:root {
+    --navbar-height: 65px
+}
+
+
+
+/* navagation logo and image*/
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/* logo and image*/
+#logo {
+    margin: 10px 34px;
+}
+
+#logo img {
+    margin: 5px 13px;
+    height: 80px;
+}
+
+.title {
+    color: navy;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.title span {
+    color: red;
+    font-weight: bold;
+}
+
+.title-font {
+    font-size: 26px;
+}
+
+#red-color {
+    color: red;
+}
+
+#color {
+    color: navy;
+    font-weight: bold;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ::before {
+    content: "";
+    background-color: rgb(27 27 234);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0%;
+    left: 0%;
+    opacity: 0.8;
+
+}
+
+#navbar ul li {
+    color: white;
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#say-no {
+    color: orangered;
+    font-weight: bolder;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.marqee-adjustment {
+    font-size: 1.4rem;
+    color: rgb(27 27 234);
+    font-weight: bolder;
+    margin: 30px 0 0 0;
+}
+
+/* Home section*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 240px;
+    justify-content: center;
+    box-shadow: 0 8px 8px;
+    color: lightgray;
+
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+#home h1 {
+
+    color: black;
+    text-align: center;
+
+}
+
+#home p {
+    color: black;
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Baloo Bhai 2', cursive;
+
+
+}
+
+/* Services Section */
+#Services {
+    margin: 34px;
+    display: flex;
+}
+
+#Services .box {
+    border: 2px solid rgb(224, 220, 220);
+    width: 20%;
+    padding: 12px;
+    /* margin: -27px 10px; */
+    margin: 16px;
+    border-radius: 28px;
+    background: rgb(164, 184, 143);
+    /* background: rgb(2, 3, 129); */
+
+}
+
+#Services .box p {
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+
+#Services .box img {
+    height: 220px;
+    padding: 12px;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    display: block;
+    border: none;
+    margin-bottom: 0;
+}
+
+/* clinent section */
+#clinents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clinent-section {
+
+    height: 344px;
+}
+
+#clinent-section::before {
+    content: "";
+    position: absolute;
+    background: url('../bg2.jpg');
+    width: 100%;
+    height: 61%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clinents img {
+    height: 150px;
+}
+
+.clinents-item {
+    padding: 35px;
+}
+
+/* Contact Section */
+#contact {
+    position: relative;
+    margin: 12px;
+    padding: 8px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 4px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+form {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px 18px;
+    margin: 4px;
+    border: 1px solid rgb(241, 240, 240);
+    border-radius: 16px;
+    /* box-shadow: 0 2px 2px; */
+}
+
+form input::placeholder {
+    color: gray;
+    /* font-size: 16px; */
+    /* font-weight: light; */
+}
+
+.submit-btn {
+    /* width: 60%; */
+    margin: 10px;
+    padding: 10px 42px;
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.final-output {
+    color: orangered;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid dodgerblue;
+}
+
+form input:focus {
+    border: 1px solid dodgerblue;
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+
+
+}
+
+
+/* utility classes*/
+.h-primary {
+    font-size: 2.0rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+.h-secondary {
+    font-size: 2.rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-decoration: none;
+
+}
+
+.h-secondary a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: lightgoldenrodyellow;
+    color: rgb(214, 10, 78);
+    margin: 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
